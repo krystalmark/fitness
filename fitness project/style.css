@@ -33,23 +33,23 @@ h1 {
   }
 
   .tracker th {
-    font-size: 0.6cm;
-    text-align: center;
-    color: gold;
-    background:black;
+    font-size: 1.1em;
+    text-align: left;
+    color: #fff;
+    background:#009578;
   }
 
   .tracker th,
   .tracker td {
-    padding: 0.45em;
+    padding: 0.8em;
   }
 
   .tracker__entries.tracker__row{
-    background: grey;
+    background: #eee;
   }
 
   .tracker__entries.tracker__row:nth-child(odd){
-    background: darkcyan;
+    background: #ddd;
   }
 
   .tracker__date,
@@ -60,9 +60,27 @@ h1 {
     font-size: 0.9em;
     height: 2.6em;
     padding: 0.5em 0;
+    background: wheat;
+    border: none;
+    outline: none;
   }
 
   .tracker__duration{
     width: 5em;
     text-align: right;
+  }
+
+  .tracker__button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: orangered;
+    font-size: 1.3em;
+    margin-left: 0.7em;
+  }
+
+  .tracker__button:hover {
+    background: rgba(0, 0, 0, 0.1);
   }
