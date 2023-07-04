@@ -45,7 +45,7 @@ h1 {
   }
 
   .tracker__entries.tracker__row{
-    background: #eee;
+    background: #ccc;
   }
 
   .tracker__entries.tracker__row:nth-child(odd){
@@ -79,8 +79,35 @@ h1 {
     color: orangered;
     font-size: 1.3em;
     margin-left: 0.7em;
+    cursor: pointer;
   }
 
   .tracker__button:hover {
     background: rgba(0, 0, 0, 0.1);
+  }
+
+  .tracker__row--add {
+    border-top: 4px solid #333;
+    border-bottom:4px solid #333;
+    background: #fff;
+  }
+
+  .tracker__row--add td {
+    text-align:right;
+  }
+
+  .tracker__add {
+    display: inline;
+    padding: 0.8em 1em;
+    color:green;
+    cursor: pointer;
+  }
+
+  tracker__add:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .tracker {
+    font-size: 16px;
+    width:550px;
   }
