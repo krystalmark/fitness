@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.exercise {
+    margin: 20cap;
+    padding: 10px;
+    border: 1px solid #ccc
+}
+
+#image{
+    width: 100px;
+    height: 100px;
+  }
+
+  .exercise {
+    margin-bottom: 20px;
+  }
+
+  .exercise img {
+    max-width: 400px;
+    height:auto;
+  }
+
+  .tracker{
+    font-size: 19px;
+    border-collapse: collapse;
+    width: 600px;
+  }
+
+  .tracker th {
+    font-size: 0.6cm;
+    text-align: center;
+    color: gold;
+    background:black;
+  }
+
+  .tracker th,
+  .tracker td {
+    padding: 0.45em;
+  }
+
+  .tracker__entries.tracker__row{
+    background: grey;
+  }
+
+  .tracker__entries.tracker__row:nth-child(odd){
+    background: darkcyan;
+  }
+
+  .tracker__date,
+  .tracker__workout,
+  .tracker__duration {
+    display:inline-block;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    height: 2.6em;
+    padding: 0.5em 0;
+  }
+
+  .tracker__duration{
+    width: 5em;
+    text-align: right;
+  }
