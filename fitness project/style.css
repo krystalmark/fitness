@@ -97,13 +97,13 @@ h1 {
   }
 
   .tracker__add {
-    display: inline;
+    display: inline-block;
     padding: 0.8em 1em;
     color:green;
     cursor: pointer;
   }
 
-  tracker__add:hover {
+  .tracker__add:hover {
     background: rgba(0, 0, 0, 0.1);
   }
 
