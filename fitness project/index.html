@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fitness App</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Fitness App</h1>
+        </header>
+
+        <main>
+            <h2>Welcome to my Fitness App!</h2>
+
+            <div class="exercise">
+                <h3>Exercise 1</h3>
+                <img src="" alt="push up">
+                <p>Step 1:</p>
+                <p>Step 2:</p>
+                <p>Step 3:</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 2</h3>
+                <img src="" alt="sit up">
+                <p>Step 1:</p>
+                <P>Step 2:</P>
+                <p>Step 3:</p>
+            </div>
+
+            <div id="fitness-data"></div>
+
+            <div id="app">
+                <table class="tracker">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Workout</th>
+                            <th>Duration</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="tracker__entries">
+                        <tr class="tracker__row">
+                            <tr class="tracker__row">
+                                
+                            </tr>
+
+                        <td>
+                            <input type="date" class="tracker__date">
+                        </td>
+
+                        <td>
+                            <select class="tracker__workout">
+                                <option value="swimming">Swimming</option>
+                                <option value="yoga">Yoga</option>
+                                <option value="indoor-cycling">Indoor-cycling</option>
+                                <option value="outdoor-cycling">Outdoor-cycling</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <input type="number" class="tracker__duration">
+                            <span class="tracker__text">minutes</span>
+                        </td>
+
+                        <td>
+                            <button type="button" class="tracker__button">&times</button>
+                        </td>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Fitness App. All rights reserved </p>
+        </footer>
+
+        <script src="index.js"></script>
+        
+    </body>
+</html>
