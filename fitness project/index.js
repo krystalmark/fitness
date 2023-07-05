@@ -7,17 +7,25 @@ window.wt = wt;
 
 
 
-fetch("http://localhost:3000/images").then((data => {
-    return data.json();
+document.addEventListener("DOMContentLoaded", function(){
+    fetch("http://localhost:3000/fitness")
+     .then(response => response.json())
+     .then(data => {
 
-}).then ((completedata) => {
+        const fitnessList = document.getElementById("fitness");
+        fitnessList.innerHTML = "";
 
-    let data1="";
-    completedata.map((values) => {
+        data.forEach(fitness => {
 
-       data1=`<img src=${values.image}`   
-    });
-
-    document.getElementById("images").innerHTML = data1;
-
-}))
+            constFitnessItem = document.createElement("li");
+            fitnessItem.classList.add("fitness-item");
+            fitnessItem.innerHTML = `
+            <p>Name: ${fitness.name}<p>
+            <p>Difficulty: ${fitness.difficulty}<P>
+            <p>Equipment: ${fitness.equipment}<p>
+            <p>instructions: ${fitness.instructions}<P>
+            `;
+            fitnessList.appendChild(fitnessItem);
+        });
+      });
+     });
