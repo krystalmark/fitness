@@ -111,3 +111,10 @@ h1 {
     font-size: 16px;
     width:550px;
   }
+
+  .logo{
+    text-align: center;
+    background-color: rgb(49, 179, 103);
+    color: white;
+    padding: 0.5em;
+  }
