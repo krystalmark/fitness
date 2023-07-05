@@ -17,9 +17,10 @@ function fetchFitnessData() {
     // Iterate through each fitness record and create HTML elements to display the data
     data.forEach(record => {
       const recordElement = document.createElement('div');
-      recordElement.innerHTML = `<p>Date: ${record.date}</p>
-                                 <p>Steps: ${record.steps}</p>
-                                 <p>Calories: ${record.calories}</p>`;
+      recordElement.innerHTML = `<p>Name: ${record.name}</p>
+                                 <p>Target: ${record.target}</p>
+                                 <p>BodyPart: ${record.bodyPart}</p>
+                                 <img src="${record.gifUrl}" alt="${record.title} GifUrl" />`;
       fitnessContainer.appendChild(recordElement);
     });
   }
