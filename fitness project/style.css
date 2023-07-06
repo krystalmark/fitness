@@ -1,9 +1,25 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-image: url('https://t3.ftcdn.net/jpg/04/46/47/54/240_F_446475458_2jaTSJqFV9DtlCcCNysZwtxTIGkSe7Hq.jpg');
+}
+
+body:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url('https://t3.ftcdn.net/jpg/04/46/47/54/240_F_446475458_2jaTSJqFV9DtlCcCNysZwtxTIGkSe7Hq.jpg');
 }
 
 h1 {
     text-align: center;
+    color:lime;
+}
+
+h2 {
+  color:black;
 }
 
 .exercise {
@@ -15,6 +31,7 @@ h1 {
 #image{
     width: 100px;
     height: 100px;
+    align-items: center;
   }
 
   .exercise {
@@ -127,4 +144,6 @@ h1 {
     background-position: center;
     background-size: cover;
   }
+
+  
 
