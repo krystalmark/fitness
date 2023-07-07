@@ -20,50 +20,53 @@
 
             <div id="app">
                 <table class="tracker">
-                    <thead>
-                        <tr>
-                            <th>Date</th>
+                    <table id="entryTable">
+                        <thead>
+                          <tr>
                             <th>Workout</th>
+                            <th>Date</th>
                             <th>Duration</th>
                             <th></th>
-                        </tr>
-                    </thead>
+                          </tr>
+                        </thead>
 
-                    <tbody class="tracker__entries">
-                        <tr class="tracker__row">
+                        <tbody class="tracker__entries">
                             <tr class="tracker__row">
-                                
+                                <tr class="tracker__row">
+
+                        <tbody>
+                          <tr>
+                            <td>
+                                <select class="tracker__workout">
+                                    <option value="swimming">Swimming</option>
+                                    <option value="yoga">Yoga</option>
+                                    <option value="indoor-cycling">Indoor-cycling</option>
+                                    <option value="outdoor-cycling">Outdoor-cycling</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <input type="date" class="tracker__date">
+                            </td>
+
+                            <td>
+                                <input type="number" class="tracker__duration">
+                                <span class="tracker__text">minutes</span>
+                            </td>
+
+                            <td><button class="removeBtn">Remove Entry</button></td>
+
+                            <tr class="tracker__row tracker__row--add">
+                                <td colspan="4">
+                                   <span id="addEntry">Add Entry &plus;</span>
+                                </td>
                             </tr>
 
-                        <td>
-                            <input type="date" class="tracker__date">
-                        </td>
-
-                        <td>
-                            <select class="tracker__workout">
-                                <option value="swimming">Swimming</option>
-                                <option value="yoga">Yoga</option>
-                                <option value="indoor-cycling">Indoor-cycling</option>
-                                <option value="outdoor-cycling">Outdoor-cycling</option>
-                            </select>
-                        </td>
-
-                        <td>
-                            <input type="number" class="tracker__duration">
-                            <span class="tracker__text">minutes</span>
-                        </td>
-
-                        <td>
-                            <button type="button" class="tracker__button">&times</button>
-                        </td>
-                        <tr class="tracker__row tracker__row--add">
-                            <td colspan="4">
-                                <span class="tracker__add">Add Entry &plus;</span>
-                            </td>
-                        </tr>
-                </table>
-            </div>
-        </main>
+                          </tr>
+                        </tbody>
+                      </table>
+                         
+                      
 
         <footer>
             <p>&copy; 2023 Fitness App. All rights reserved </p>

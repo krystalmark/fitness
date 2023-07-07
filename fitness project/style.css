@@ -20,6 +20,7 @@ h1 {
 
 h2 {
   color:black;
+  text-align: center;
 }
 
 .exercise {
@@ -52,7 +53,7 @@ h2 {
   .tracker th {
     font-size: 1.1em;
     text-align: left;
-    color: #fff;
+    color: green;
     background:#009578;
   }
 
@@ -74,7 +75,7 @@ h2 {
   .tracker__duration {
     display:inline-block;
     box-sizing: border-box;
-    font-size: 0.9em;
+    font-size: 1.1em;
     height: 2.6em;
     padding: 0.5em 0;
     background: wheat;
@@ -145,5 +146,24 @@ h2 {
     background-size: cover;
   }
 
-  
+  #addEntry {
+    display: inline-block;
+    padding: 0.8em 1em;
+    color:green;
+    cursor: pointer;
+  }
 
+  .removeBtn {
+    color: orangered;
+    font-size: 0.9em;
+    margin-left: 0.1em;
+    cursor: pointer;
+  }
+
+  .tracker__row--add {
+    border-top: 4px solid #333;
+    border-bottom:4px solid #333;
+    background: #fff;
+  }
+
+  
