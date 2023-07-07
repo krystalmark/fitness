@@ -84,7 +84,7 @@ h2 {
   }
 
   .tracker__duration{
-    width: 5em;
+    width: 3em;
     text-align: right;
   }
 
@@ -166,4 +166,21 @@ h2 {
     background: #fff;
   }
 
-  
+  #entryTable th {
+    font-size: 1.1em;
+    text-align: left;
+    color: whitesmoke;
+    background:#009578;
+  }
+
+  #entryTable {
+    font-size: 16px;
+    border-collapse: collapse;
+    width: 600px;
+    text-align: center;
+  }
+
+  #entryTable th,
+  #entryTable td {
+    padding: 0.8em;
+  }
