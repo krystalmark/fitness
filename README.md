@@ -19,3 +19,5 @@ Copyright (c) [2023] [Krystal]. Permission is hereby granted, free of charge, to
 ---
 
 Link to live site : https://krystalmark.github.io/fitness/
+permalink: /index.html
+
